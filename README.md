@@ -1,17 +1,46 @@
-<h2>Context:</h2>
+<h2>Semantic Data Visualisation of Airbnb listings</h2>
 
-I'd like to answer the question "Can you describe the vibe of Airibn listing using listing user-generated comments?" with my research. The goal of this exercise is to utilise user - generated content to build a short description for each property and to visualise it on a map.
+## Table of contents
+* [Introduction](#introduction)
+* [Technologies](#technologies)
+* [Project Motivation and Content](#project_motivation_and_content)
+* [Results](#results)
+* [Acknowledgement](#acknowledgement)
 
-<h4>Installations</h4>
+<h4>Introduction</h4>
+
+This is a training project. I'd like to answer the question "Can you describe the vibe of Airibn listing using listing user-generated comments?" with my research. The goal of this exercise is to utilise user - generated content to build a short description for each property and to visualise it on a map.
+
+<h4>Technologies</h4>
+
+I used 3.6 and Jupyter Notebooks for this research project.
 There are few libraries that are needed to be installed in order to work with the notebook
-pandas (import pandas as pd)<br>
-numpy (import numpy as np)<br>
-Counter (from collections import Counter)<br>
-NLTK (import nltk)<br>
-folium (import folium)<br>
-plotly import plotly.graph_objects as go<br>
+ - Numpy <br>
+ - Pandas<br>
+ - Counter (from collections import Counter)<br>
+ - NLTK <br>
+ - Folium<br>
+ - Plotly<br>
 <br>
-<h4>Project Motivation and content: </h4>
+
+## Setup
+To run this project, install the following libraries:
+
+```
+import pandas as pd
+import numpy as np
+from collections import Counter
+import datetime as dt
+import nltk
+from nltk import ngrams
+import folium
+import plotly.graph_objects as go
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+```
+
+<h4>Project Motivation and Content: </h4>
 
   I'd like to answer the following questions in my research:<br> <br>
 - "Can you describe the vibe of each Boston neighborhood using listing descriptions?"<br>
